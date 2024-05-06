@@ -5,7 +5,7 @@ import img from "./images/profile.jpg";
 const AboutMe = () => {
   const content = (
     <div className="about-me-container" id="about">
-      <img className="picture" src={img}  />
+      <img className="picture" src={img} alt="" />
       <div className="about-me-box">
         <p className="about-me-title">ABOUT ME</p>
         <p className="about-me-text">
