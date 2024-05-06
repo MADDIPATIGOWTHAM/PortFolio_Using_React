@@ -1,0 +1,145 @@
+.about-me-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+   
+    margin-bottom: 2px;
+    box-sizing: border-box;
+  
+    overflow: hidden;
+  }
+  
+  .about-me-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  
+    padding: 2rem;
+    background-color: rgb(5, 212, 240);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-image: linear-gradient(to right, #add3e6, #ddd);
+    background-size: 100% 100%;
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    transition: background-position 1.0s ease-in-out;
+  }
+  
+  .picture {
+    width: 15rem; /* Increase the initial size */
+    height: 15rem; /* Increase the initial size */
+    border-radius: 50%;
+    margin: 1rem;
+    animation: fadeInOut 5s infinite alternate; /* Apply fade in and out animation */
+  }
+  
+  @media (max-width: 768px) {
+    .about-me-container {
+      flex-direction: column;
+    }
+  
+    .about-me-box {
+      width: 100%;
+    }
+  
+    .picture {
+        width: 15rem; /* Increase the initial size */
+        height: 15rem; /* Increase the initial size */
+        border-radius: 50%;
+        margin: 1rem;
+        animation: fadeInOut 5s infinite alternate; /* Apply fade in and out animation */
+      }
+      
+  
+    .about-me-title {
+      font-size: 2rem;
+    }
+  
+    .about-me-text {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-me-title {
+      font-size: 1.5rem;
+      
+    }
+  
+    .about-me-text {
+      font-size: 1rem;
+    }
+    .about-me-container {
+        flex-direction: column;
+        margin-bottom: 50px;
+      }
+      img{
+        margin-bottom: 50px;
+      }
+
+  }
+  
+  .about-me-title {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #3f3f3f;
+  }
+  
+  .about-me-text {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #3f3f3f;
+    margin-bottom: 0.5rem;
+  }
+  
+  .about-me-underline {
+    display: inline-block;
+    position: relative;
+    margin: 0 0.5rem;
+  }
+  
+  .about-me-underline::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -0.1rem;
+    height: 0.2rem;
+    background-color: #3f3f3f;
+    opacity: 0.5;
+  }
+  
+  .about-me-underline:first-child::before {
+    left: 0;
+  }
+  
+  .about-me-underline:last-child::before {
+    right: 0;
+  }
+  
+  .background-animations {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+    animation: move 10s linear infinite
+  }
